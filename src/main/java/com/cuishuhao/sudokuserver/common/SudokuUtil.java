@@ -11,6 +11,10 @@ public class SudokuUtil {
   private static final boolean[][] columns = new boolean[sideLength][sideLength];
   private static final boolean[][] subGrids = new boolean[sideLength][sideLength];
 
+  // todo: configurable
+  private static final int clueMin = 28;
+  private static final int clueMax = 32;
+
   public static String format(int[] grid) {
     StringBuilder builder = new StringBuilder();
 
@@ -138,7 +142,8 @@ public class SudokuUtil {
     System.arraycopy(solution, 0, puzzle, 0, gridLength);
     for (int i = 0; i < gridLength; i++) mask[i] = i;
     RandomUtil.shuffle(mask);
-    for (int i = 0; i < 50; i++) puzzle[mask[i]] = 0;
+    int countToDig = gridLength - RandomUtil.randomInt(clueMin, clueMax);
+    for (int i = 0; i < countToDig; i++) puzzle[mask[i]] = 0;
   }
 
   private static boolean hasSingleSolution(int[] puzzle) {

@@ -17,4 +17,8 @@ public class RandomUtil {
     a[i] = a[j];
     a[j] = temp;
   }
+
+  public static int randomInt(int min, int max) {
+    return random.nextInt(min, max);
+  }
 }
