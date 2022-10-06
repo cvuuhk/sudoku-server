@@ -2,7 +2,6 @@ package com.cuishuhao.sudokuserver.common;
 
 import org.junit.jupiter.api.Test;
 
-import static com.cuishuhao.sudokuserver.common.SudokuUtil.gridLength;
 import static org.junit.jupiter.api.Assertions.*;
 
 class SudokuUtilTest {
@@ -195,95 +194,95 @@ class SudokuUtilTest {
 
   @Test
   void getSubGrid() {
-    assertEquals(1, SudokuUtil.getSubgrid(1));
-    assertEquals(1, SudokuUtil.getSubgrid(2));
-    assertEquals(1, SudokuUtil.getSubgrid(3));
-    assertEquals(2, SudokuUtil.getSubgrid(4));
-    assertEquals(2, SudokuUtil.getSubgrid(5));
-    assertEquals(2, SudokuUtil.getSubgrid(6));
-    assertEquals(3, SudokuUtil.getSubgrid(7));
-    assertEquals(3, SudokuUtil.getSubgrid(8));
-    assertEquals(3, SudokuUtil.getSubgrid(9));
+    assertEquals(1, SudokuUtil.getSubGrid(1));
+    assertEquals(1, SudokuUtil.getSubGrid(2));
+    assertEquals(1, SudokuUtil.getSubGrid(3));
+    assertEquals(2, SudokuUtil.getSubGrid(4));
+    assertEquals(2, SudokuUtil.getSubGrid(5));
+    assertEquals(2, SudokuUtil.getSubGrid(6));
+    assertEquals(3, SudokuUtil.getSubGrid(7));
+    assertEquals(3, SudokuUtil.getSubGrid(8));
+    assertEquals(3, SudokuUtil.getSubGrid(9));
 
-    assertEquals(1, SudokuUtil.getSubgrid(10));
-    assertEquals(1, SudokuUtil.getSubgrid(11));
-    assertEquals(1, SudokuUtil.getSubgrid(12));
-    assertEquals(2, SudokuUtil.getSubgrid(13));
-    assertEquals(2, SudokuUtil.getSubgrid(14));
-    assertEquals(2, SudokuUtil.getSubgrid(15));
-    assertEquals(3, SudokuUtil.getSubgrid(16));
-    assertEquals(3, SudokuUtil.getSubgrid(17));
-    assertEquals(3, SudokuUtil.getSubgrid(18));
+    assertEquals(1, SudokuUtil.getSubGrid(10));
+    assertEquals(1, SudokuUtil.getSubGrid(11));
+    assertEquals(1, SudokuUtil.getSubGrid(12));
+    assertEquals(2, SudokuUtil.getSubGrid(13));
+    assertEquals(2, SudokuUtil.getSubGrid(14));
+    assertEquals(2, SudokuUtil.getSubGrid(15));
+    assertEquals(3, SudokuUtil.getSubGrid(16));
+    assertEquals(3, SudokuUtil.getSubGrid(17));
+    assertEquals(3, SudokuUtil.getSubGrid(18));
 
-    assertEquals(1, SudokuUtil.getSubgrid(19));
-    assertEquals(1, SudokuUtil.getSubgrid(20));
-    assertEquals(1, SudokuUtil.getSubgrid(21));
-    assertEquals(2, SudokuUtil.getSubgrid(22));
-    assertEquals(2, SudokuUtil.getSubgrid(23));
-    assertEquals(2, SudokuUtil.getSubgrid(24));
-    assertEquals(3, SudokuUtil.getSubgrid(25));
-    assertEquals(3, SudokuUtil.getSubgrid(26));
-    assertEquals(3, SudokuUtil.getSubgrid(27));
+    assertEquals(1, SudokuUtil.getSubGrid(19));
+    assertEquals(1, SudokuUtil.getSubGrid(20));
+    assertEquals(1, SudokuUtil.getSubGrid(21));
+    assertEquals(2, SudokuUtil.getSubGrid(22));
+    assertEquals(2, SudokuUtil.getSubGrid(23));
+    assertEquals(2, SudokuUtil.getSubGrid(24));
+    assertEquals(3, SudokuUtil.getSubGrid(25));
+    assertEquals(3, SudokuUtil.getSubGrid(26));
+    assertEquals(3, SudokuUtil.getSubGrid(27));
 
-    assertEquals(4, SudokuUtil.getSubgrid(28));
-    assertEquals(4, SudokuUtil.getSubgrid(29));
-    assertEquals(4, SudokuUtil.getSubgrid(30));
-    assertEquals(5, SudokuUtil.getSubgrid(31));
-    assertEquals(5, SudokuUtil.getSubgrid(32));
-    assertEquals(5, SudokuUtil.getSubgrid(33));
-    assertEquals(6, SudokuUtil.getSubgrid(34));
-    assertEquals(6, SudokuUtil.getSubgrid(35));
-    assertEquals(6, SudokuUtil.getSubgrid(36));
+    assertEquals(4, SudokuUtil.getSubGrid(28));
+    assertEquals(4, SudokuUtil.getSubGrid(29));
+    assertEquals(4, SudokuUtil.getSubGrid(30));
+    assertEquals(5, SudokuUtil.getSubGrid(31));
+    assertEquals(5, SudokuUtil.getSubGrid(32));
+    assertEquals(5, SudokuUtil.getSubGrid(33));
+    assertEquals(6, SudokuUtil.getSubGrid(34));
+    assertEquals(6, SudokuUtil.getSubGrid(35));
+    assertEquals(6, SudokuUtil.getSubGrid(36));
 
-    assertEquals(4, SudokuUtil.getSubgrid(37));
-    assertEquals(4, SudokuUtil.getSubgrid(38));
-    assertEquals(4, SudokuUtil.getSubgrid(39));
-    assertEquals(5, SudokuUtil.getSubgrid(40));
-    assertEquals(5, SudokuUtil.getSubgrid(41));
-    assertEquals(5, SudokuUtil.getSubgrid(42));
-    assertEquals(6, SudokuUtil.getSubgrid(43));
-    assertEquals(6, SudokuUtil.getSubgrid(44));
-    assertEquals(6, SudokuUtil.getSubgrid(45));
+    assertEquals(4, SudokuUtil.getSubGrid(37));
+    assertEquals(4, SudokuUtil.getSubGrid(38));
+    assertEquals(4, SudokuUtil.getSubGrid(39));
+    assertEquals(5, SudokuUtil.getSubGrid(40));
+    assertEquals(5, SudokuUtil.getSubGrid(41));
+    assertEquals(5, SudokuUtil.getSubGrid(42));
+    assertEquals(6, SudokuUtil.getSubGrid(43));
+    assertEquals(6, SudokuUtil.getSubGrid(44));
+    assertEquals(6, SudokuUtil.getSubGrid(45));
 
-    assertEquals(4, SudokuUtil.getSubgrid(46));
-    assertEquals(4, SudokuUtil.getSubgrid(47));
-    assertEquals(4, SudokuUtil.getSubgrid(48));
-    assertEquals(5, SudokuUtil.getSubgrid(49));
-    assertEquals(5, SudokuUtil.getSubgrid(50));
-    assertEquals(5, SudokuUtil.getSubgrid(51));
-    assertEquals(6, SudokuUtil.getSubgrid(52));
-    assertEquals(6, SudokuUtil.getSubgrid(53));
-    assertEquals(6, SudokuUtil.getSubgrid(54));
+    assertEquals(4, SudokuUtil.getSubGrid(46));
+    assertEquals(4, SudokuUtil.getSubGrid(47));
+    assertEquals(4, SudokuUtil.getSubGrid(48));
+    assertEquals(5, SudokuUtil.getSubGrid(49));
+    assertEquals(5, SudokuUtil.getSubGrid(50));
+    assertEquals(5, SudokuUtil.getSubGrid(51));
+    assertEquals(6, SudokuUtil.getSubGrid(52));
+    assertEquals(6, SudokuUtil.getSubGrid(53));
+    assertEquals(6, SudokuUtil.getSubGrid(54));
 
-    assertEquals(7, SudokuUtil.getSubgrid(55));
-    assertEquals(7, SudokuUtil.getSubgrid(56));
-    assertEquals(7, SudokuUtil.getSubgrid(57));
-    assertEquals(8, SudokuUtil.getSubgrid(58));
-    assertEquals(8, SudokuUtil.getSubgrid(59));
-    assertEquals(8, SudokuUtil.getSubgrid(60));
-    assertEquals(9, SudokuUtil.getSubgrid(61));
-    assertEquals(9, SudokuUtil.getSubgrid(62));
-    assertEquals(9, SudokuUtil.getSubgrid(63));
+    assertEquals(7, SudokuUtil.getSubGrid(55));
+    assertEquals(7, SudokuUtil.getSubGrid(56));
+    assertEquals(7, SudokuUtil.getSubGrid(57));
+    assertEquals(8, SudokuUtil.getSubGrid(58));
+    assertEquals(8, SudokuUtil.getSubGrid(59));
+    assertEquals(8, SudokuUtil.getSubGrid(60));
+    assertEquals(9, SudokuUtil.getSubGrid(61));
+    assertEquals(9, SudokuUtil.getSubGrid(62));
+    assertEquals(9, SudokuUtil.getSubGrid(63));
 
-    assertEquals(7, SudokuUtil.getSubgrid(64));
-    assertEquals(7, SudokuUtil.getSubgrid(65));
-    assertEquals(7, SudokuUtil.getSubgrid(66));
-    assertEquals(8, SudokuUtil.getSubgrid(67));
-    assertEquals(8, SudokuUtil.getSubgrid(68));
-    assertEquals(8, SudokuUtil.getSubgrid(69));
-    assertEquals(9, SudokuUtil.getSubgrid(70));
-    assertEquals(9, SudokuUtil.getSubgrid(71));
-    assertEquals(9, SudokuUtil.getSubgrid(72));
+    assertEquals(7, SudokuUtil.getSubGrid(64));
+    assertEquals(7, SudokuUtil.getSubGrid(65));
+    assertEquals(7, SudokuUtil.getSubGrid(66));
+    assertEquals(8, SudokuUtil.getSubGrid(67));
+    assertEquals(8, SudokuUtil.getSubGrid(68));
+    assertEquals(8, SudokuUtil.getSubGrid(69));
+    assertEquals(9, SudokuUtil.getSubGrid(70));
+    assertEquals(9, SudokuUtil.getSubGrid(71));
+    assertEquals(9, SudokuUtil.getSubGrid(72));
 
-    assertEquals(7, SudokuUtil.getSubgrid(73));
-    assertEquals(7, SudokuUtil.getSubgrid(74));
-    assertEquals(7, SudokuUtil.getSubgrid(75));
-    assertEquals(8, SudokuUtil.getSubgrid(76));
-    assertEquals(8, SudokuUtil.getSubgrid(77));
-    assertEquals(8, SudokuUtil.getSubgrid(78));
-    assertEquals(9, SudokuUtil.getSubgrid(79));
-    assertEquals(9, SudokuUtil.getSubgrid(80));
-    assertEquals(9, SudokuUtil.getSubgrid(81));
+    assertEquals(7, SudokuUtil.getSubGrid(73));
+    assertEquals(7, SudokuUtil.getSubGrid(74));
+    assertEquals(7, SudokuUtil.getSubGrid(75));
+    assertEquals(8, SudokuUtil.getSubGrid(76));
+    assertEquals(8, SudokuUtil.getSubGrid(77));
+    assertEquals(8, SudokuUtil.getSubGrid(78));
+    assertEquals(9, SudokuUtil.getSubGrid(79));
+    assertEquals(9, SudokuUtil.getSubGrid(80));
+    assertEquals(9, SudokuUtil.getSubGrid(81));
   }
 
   @Test
@@ -343,7 +342,36 @@ class SudokuUtilTest {
 
   @Test
   void createSolution() {
-    int[] solution = SudokuUtil.createSudoku().getSolution();
+    int[] solution;
+    solution= SudokuUtil.createSudoku().getSolution();
+    System.out.println(SudokuUtil.format(solution));
+    solution= SudokuUtil.createSudoku().getSolution();
+    System.out.println(SudokuUtil.format(solution));
+    solution= SudokuUtil.createSudoku().getSolution();
+    System.out.println(SudokuUtil.format(solution));
+    solution= SudokuUtil.createSudoku().getSolution();
     System.out.println(SudokuUtil.format(solution));
   }
+
+  @Test
+  void createPuzzle() {
+    int[] puzzle ;
+    puzzle = SudokuUtil.createSudoku().getPuzzle();
+    System.out.println(SudokuUtil.format(puzzle));
+    puzzle = SudokuUtil.createSudoku().getPuzzle();
+    System.out.println(SudokuUtil.format(puzzle));
+    puzzle = SudokuUtil.createSudoku().getPuzzle();
+    System.out.println(SudokuUtil.format(puzzle));
+    puzzle = SudokuUtil.createSudoku().getPuzzle();
+    System.out.println(SudokuUtil.format(puzzle));
+  }
+
+  @Test
+  void createSudoku() {
+    SudokuUtil.createSudoku().print();
+    SudokuUtil.createSudoku().print();
+    SudokuUtil.createSudoku().print();
+    SudokuUtil.createSudoku().print();
+  }
+
 }
