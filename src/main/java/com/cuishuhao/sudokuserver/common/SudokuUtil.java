@@ -2,6 +2,9 @@ package com.cuishuhao.sudokuserver.common;
 
 import com.cuishuhao.sudokuserver.entity.Sudoku;
 
+import java.io.FileInputStream;
+import java.util.Properties;
+
 public class SudokuUtil {
 
   public static final int gridLength = 81;
@@ -11,9 +14,18 @@ public class SudokuUtil {
   private static final boolean[][] columns = new boolean[sideLength][sideLength];
   private static final boolean[][] subGrids = new boolean[sideLength][sideLength];
 
-  // todo: configurable
-  private static final int clueMin = 28;
-  private static final int clueMax = 32;
+  private static final int clueMin;
+  private static final int clueMax;
+
+  static  {
+    Properties prop = new Properties();
+    try {
+      prop.load(new FileInputStream("src/main/resources/application.properties"));
+    } catch (Exception ignored) {}
+
+    clueMin = Integer.parseInt(prop.getProperty("sudoku.clue.min"));
+    clueMax = Integer.parseInt(prop.getProperty("sudoku.clue.max"));
+  }
 
   public static String format(int[] grid) {
     StringBuilder builder = new StringBuilder();

@@ -49,6 +49,8 @@ public class Sudoku {
   }
 
   public void print() {
+    System.out.println("difficulty:");
+    System.out.println(difficulty);
     System.out.println("puzzle:");
     System.out.println(SudokuUtil.format(puzzle));
     System.out.println("solution:");
